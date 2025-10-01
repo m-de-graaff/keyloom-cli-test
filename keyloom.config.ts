@@ -1,7 +1,6 @@
 import { defineKeyloom } from "@keyloom/core/config";
 import { PrismaAdapter } from "@keyloom/adapters";
 import github from "@keyloom/providers/github";
-import google from "@keyloom/providers/google";
 import { db } from "@/lib/db";
 
 export default defineKeyloom({

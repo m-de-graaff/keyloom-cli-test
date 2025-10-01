@@ -1,7 +1,7 @@
-import { SignInForm, Providers } from '@keyloom/ui/auth'
-import { Card } from '@keyloom/ui/components/card'
+'use client'
 
-export const metadata = { title: 'Sign In' }
+import { Card } from '@/components/ui/card'
+import { SignInForm, Providers } from '@keyloom/ui/auth'
 
 export default function SignInPage() {
   return (
@@ -9,7 +9,6 @@ export default function SignInPage() {
       <Card className="w-full max-w-md p-6">
         <h1 className="text-2xl font-semibold mb-6">Welcome back</h1>
         
-        {/* OAuth Providers (auto-configured by CLI) */}
         <Providers callbackUrl="/dashboard" />
         
         <div className="relative my-6">
