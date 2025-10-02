@@ -1,6 +1,14 @@
+'use client';
+
 import { UserButton } from '@keyloom/ui/auth'
 
-export function UserButtonComponent({ user }: { user: any }) {
+interface User {
+  name?: string | null;
+  email?: string | null;
+  image?: string | null;
+}
+
+export function UserButtonComponent({ user }: { user: User }) {
   return (
     <UserButton 
       user={user}

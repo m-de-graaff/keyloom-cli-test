@@ -4,9 +4,9 @@ import keyloomConfig from "./keyloom.config";
 
 export default createAuthMiddleware(keyloomConfig, {
   // routes
-  publicRoutes: ["/", "/sign-in"],
+  publicRoutes: ["/", "/sign-in", "/sign-up", /^\/api\/auth\/.*/],
 });
 
 export const config = {
-  matcher: ["/((?!_next|.*\\.(?:ico|png|jpg|svg|css|js|map)).*)"],
+  matcher: ["/((?!_next|api|.*\\.(?:ico|png|jpg|svg|css|js|map)).*)"],
 };
